@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Peristiwa';
+    src:
+      local("Peristiwa"),
+      url("/javier/fonts/Peristiwa.otf") format("otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.navegacion a {
+    position: relative;
+    font-size: 1.1rem;
+    color: #355171;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navegacion a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    background: #FDD85D;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .6s;
+}
+
+.navegacion a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#logo {
+    font-family: 'Peristiwa';
+    color: #001D3D;
+    font-size: 50px;
+}
+
+.foto-paisaje {
+    height: 650px;
+    background-image: url(/javier/img/puente.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros {
+    margin: 80px 0;
+}
+
+.nosotros > div > h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.parr1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.parr2 {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.habitacion > div > h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.habitacion > div > div > img {
+    margin-top: 40px;
+    width: 25%;
+}
+
